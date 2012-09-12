@@ -1,6 +1,6 @@
 package Setup::File::TextFragment;
 
-use 5.010001;
+use 5.010;
 use strict;
 use warnings;
 use Log::Any '$log';
@@ -8,11 +8,7 @@ use Log::Any '$log';
 use File::Trash::Undoable;
 use Text::Fragment;
 
-our $VERSION = '0.03'; # VERSION
-
-require Exporter;
-our @ISA       = qw(Exporter);
-our @EXPORT_OK = qw(setup_text_fragment);
+our $VERSION = '0.01'; # VERSION
 
 our %SPEC;
 
@@ -180,11 +176,9 @@ sub setup_text_fragment {
 1;
 # ABSTRACT: Insert/delete text fragment in a file, with undo support
 
+
 __END__
-
 =pod
-
-=encoding UTF-8
 
 =head1 NAME
 
@@ -192,10 +186,23 @@ Setup::File::TextFragment - Insert/delete text fragment in a file, with undo sup
 
 =head1 VERSION
 
-This document describes version 0.03 of Setup::File::TextFragment (from Perl distribution Setup-File-TextFragment), released on 2014-05-17.
+version 0.01
+
+=head1 SEE ALSO
+
+L<Text::Fragment>
+
+L<Setup>
+
+=head1 DESCRIPTION
+
+
+This module has L<Rinci> metadata.
 
 =head1 FUNCTIONS
 
+
+None are exported by default, but they are exportable.
 
 =head2 setup_text_fragment(%args) -> [status, msg, result, meta]
 
@@ -292,36 +299,7 @@ For more information on transaction, see L<Rinci::Transaction>.
 
 Return value:
 
-Returns an enveloped result (an array).
-
-First element (status) is an integer containing HTTP status code
-(200 means OK, 4xx caller error, 5xx function error). Second element
-(msg) is a string containing error message, or 'OK' if status is
-200. Third element (result) is optional, the actual result. Fourth
-element (meta) is called result metadata and is optional, a hash
-that contains extra information.
-
-=head1 SEE ALSO
-
-L<Text::Fragment>
-
-L<Setup>
-
-=head1 HOMEPAGE
-
-Please visit the project's homepage at L<https://metacpan.org/release/Setup-File-TextFragment>.
-
-=head1 SOURCE
-
-Source repository is at L<https://github.com/sharyanto/perl-Setup-File-TextFragment>.
-
-=head1 BUGS
-
-Please report any bugs or feature requests on the bugtracker website L<https://rt.cpan.org/Public/Dist/Display.html?Name=Setup-File-TextFragment>
-
-When submitting a bug or request, please include a test-file or a
-patch to an existing test-file that illustrates the bug or desired
-feature.
+Returns an enveloped result (an array). First element (status) is an integer containing HTTP status code (200 means OK, 4xx caller error, 5xx function error). Second element (msg) is a string containing error message, or 'OK' if status is 200. Third element (result) is optional, the actual result. Fourth element (meta) is called result metadata and is optional, a hash that contains extra information.
 
 =head1 AUTHOR
 
@@ -329,9 +307,10 @@ Steven Haryanto <stevenharyanto@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2012 by Steven Haryanto.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
