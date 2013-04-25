@@ -1,0 +1,30 @@
+---
+abstract: 'Insert/delete text fragment in a file, with undo support'
+author:
+  - 'Steven Haryanto <stevenharyanto@gmail.com>'
+build_requires:
+  File::Slurp: 0
+  File::chdir: 0
+  Module::Build: 0.3601
+  Test::More: 0.98
+  Test::Perinci::Tx::Manager: 0.42
+configure_requires:
+  Module::Build: 0.3601
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Setup-File-TextFragment
+requires:
+  File::Trash::Undoable: 0.09
+  Log::Any: 0
+  Rinci: v1.1.29
+  Setup: v1.0.4
+  Text::Fragment: 0
+  perl: 5.010001
+resources:
+  homepage: http://metacpan.org/release/Setup-File-TextFragment
+  repository: http://github.com/sharyanto/perl-Setup-File-TextFragment
+version: 0.02

@@ -1,0 +1,63 @@
+{
+   "abstract" : "Insert/delete text fragment in a file, with undo support",
+   "author" : [
+      "Steven Haryanto <stevenharyanto@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Setup-File-TextFragment",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.3601"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08",
+            "Test::Rinci" : "0.01"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "File::Trash::Undoable" : "0.09",
+            "Log::Any" : "0",
+            "Rinci" : "v1.1.29",
+            "Setup" : "v1.0.4",
+            "Text::Fragment" : "0",
+            "perl" : "5.010001"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Slurp" : "0",
+            "File::chdir" : "0",
+            "Test::More" : "0.98",
+            "Test::Perinci::Tx::Manager" : "0.42"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "homepage" : "http://metacpan.org/release/Setup-File-TextFragment",
+      "repository" : {
+         "url" : "http://github.com/sharyanto/perl-Setup-File-TextFragment"
+      }
+   },
+   "version" : "0.02"
+}
+
